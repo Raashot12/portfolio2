@@ -1,0 +1,696 @@
+/*GLOBAL STYLING*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  animation-name: animated-body;
+  animation-duration: 0.3s;
+  line-height: 1.6;
+}
+
+@keyframes animated-body {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*NAVIGATION STYLING*/
+header {
+  font-family: "Work Sans", sans-serif;
+  position: fixed;
+  font-style: bold;
+  font-weight: bold;
+  font-size: 22px;
+  background-color: white;
+  z-index: 345;
+  border-bottom: 1px solid rgb(194, 193, 193);
+}
+header {
+  display: flex;
+  align-items: center;
+}
+.container,
+.container-sm {
+  width: 100%;
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+.container-sm {
+  max-width: 80rem;
+}
+
+.text-font-family {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 22px;
+}
+header a {
+  text-decoration: none;
+  flex: 1;
+}
+.domrey-logo {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+.domrey-logo h1 {
+  color: #1761a0;
+  font-size: 23px;
+}
+.domrey-menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.domrey-menu li {
+  padding: 0 1em;
+}
+.domrey-menu li a {
+  text-decoration: none;
+  color: #02203c;
+  transition: 0.3s ease;
+  font-size: 15px;
+  justify-content: space-around;
+}
+.domrey-menu li a:hover {
+  color: #899bb4;
+  transition: 0.3s ease;
+}
+
+.block-home-header-text {
+  font-family: "Work Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 133.3%;
+}
+.domrey-category {
+  width: 100%;
+  height: 40vh;
+  background: #fff;
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+}
+.domrey-time p {
+  font-size: 15px;
+  color: #1761a0;
+}
+.line-1,
+.line-2,
+.line-3 {
+  width: 25px;
+  height: 0.1em;
+  background: #020000;
+}
+.line-2 {
+  margin: 0.3em 0;
+}
+.rotate-domrey-bars .line-1 {
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+.rotate-domrey-bars .line-2 {
+  opacity: 0;
+}
+.rotate-domrey-bars .line-3 {
+  transform: rotate(45deg) translate(-5px, -4px);
+}
+.domrey-bars {
+  cursor: pointer;
+  display: none;
+  z-index: 5;
+}
+.domrey-bars div {
+  transition: 0.3s;
+}
+#domrey-logo-small-devices {
+  display: none;
+}
+.copy {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* First -Banner section */
+.banner-expertise {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 103.3%;
+  color: #333333;
+}
+.banner-expertise {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 103.3%;
+  color: #333333;
+}
+.text-plain-banner {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: #252525;
+}
+.container-background {
+  background-color: #ebfaff;
+  height: 970px;
+}
+/* Second Features Container */
+@media only screen and (min-width: 600px) {
+  .text-content-section-two {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .text-content-section-two {
+    max-width: 100%;
+  }
+  .top-features-item-p {
+    font-size: 30px;
+  }
+
+  .top-features-item-p h2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .text-content-section-two {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+  }
+}
+
+/* Second Features Container */
+.container-background-two {
+  background-image: url("./COVER\ 2\ 1.svg");
+  height: 599px;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-banner-container {
+  background: #ebfaff;
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-position: 30% 100%;
+}
+.banner-expertise-two {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.second-banner-container img {
+  width: 100%;
+  max-width: 100%;
+}
+.container .header-text-section {
+  display: inline-block;
+}
+.find-furry-match {
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+}
+.banner-expertise-two {
+  color: rgb(255, 255, 255, 1);
+}
+.banner-expertise-two p {
+  color: rgb(255, 255, 255, 1);
+  font-size: 20px;
+}
+.btn-container button {
+  width: 274px;
+  height: 100px;
+  border-radius: 180px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.4s;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+.btn-container button:hover {
+  background-color: white;
+  font-size: bold;
+  color: #000000;
+}
+
+/* THIRD Banner Container */
+
+/* .third-banner-container img {
+  width: 100%;
+  max-width: 100%;
+} */
+
+/* .find-snowboard2 {
+  padding-bottom: 3.5rem;
+}
+.find-snowboard2 img {
+  position: relative;
+  right: 150px;
+} */
+
+/* Fourth Banner Container */
+.fourth-img-assest {
+  position: absolute;
+  right: 0;
+  overflow-y: hidden;
+}
+.container-background-fourth {
+  background-color: #ebfaff;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth-section-text-bold {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 103.3%;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
+/* .fourth-banner-container img {
+  width: 100%;
+  max-width: 100%;
+}
+.svg-overlay {
+  position: relative;
+  bottom: 14rem;
+} */
+
+.btn-container-2 button {
+  width: 274px;
+  height: 100px;
+  border-radius: 180px;
+  border: 2px solid #ffffff;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.4s;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: white;
+}
+.btn-container-2 button:hover {
+  background-color: white;
+  font-size: bold;
+  color: #000000;
+}
+
+/* Maximum and Minimum Width Css queries */
+
+@media only screen and (max-width: 934px) {
+  .container-background {
+    background-color: #ebfaff;
+    height: 1362px;
+  }
+}
+@media only screen and (min-width: 935px) {
+  .container-background {
+    background-color: #ebfaff;
+    height: 900px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .container-background-fourth {
+    background-color: #ebfaff;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 766px) {
+  .container-background {
+    background-color: #ebfaff;
+    height: 1150px;
+  }
+}
+@media only screen and (min-width: 1030px) {
+  .container-background-three {
+    background-image: url("./Demacia3\ 2.png");
+    background-repeat: no-repeat;
+    height: 924px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 1029px) {
+  .container-background-three {
+    background-image: url("./Demacia3\ 2.png");
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .container-background-three {
+    background-image: url("./Demacia3\ 2.png");
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .container-background-three {
+    background-image: url("./Demacia3\ 2.png");
+    background-repeat: no-repeat;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* MEDIA QUERIES SECTION*/
+@media only screen and (max-width: 850px) {
+  .domrey-time {
+    z-index: 5;
+  }
+  header {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+  }
+  header {
+    width: 100%;
+    height: 10vh;
+  }
+  .domrey-bars {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    flex-direction: column;
+  }
+  .domrey-logo {
+    display: flex;
+    float: right;
+  }
+  .domrey-logo-small-devices img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .domrey-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-100%);
+    transition: 0.3s;
+    background: #fff;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+  }
+  .domrey-menu li {
+    padding: 0;
+    margin: 1.5em 0;
+  }
+  .domrey-bars {
+    display: block;
+  }
+  #domrey-logo-small-devices {
+    display: block;
+  }
+  .show-domrey-menu {
+    transform: translate(0);
+  }
+  .hide-on-scroll-page {
+    overflow: hidden;
+  }
+  .banner-img {
+    display: none;
+  }
+  .second-banner {
+    height: 647px;
+    align-items: center;
+    display: column !important;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .first-banner {
+    height: 647px;
+    align-items: center;
+    display: column !important;
+    flex: 1;
+    justify-content: space-between;
+    padding-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .container,
+  .container-sm {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 6rem;
+  }
+  .second-banner {
+    height: 647px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .first-banner {
+    height: 647px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    padding-top: 14rem;
+    padding-bottom: 2rem;
+  }
+  .banner-expertise-two {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+    font-family: "Work Sans", sans-serif;
+    width: 500px;
+    font-style: normal;
+  }
+  .header-text-section {
+    margin-top: 1rem;
+  }
+}
+.container-sm {
+  max-width: 80rem;
+}
+@media only screen and (max-width: 1014px) {
+  .banner-expertise {
+    font-size: 2.4rem;
+    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .second-banner-container {
+    background: #ebfaff;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+  }
+  .header-text-section {
+    margin-top: 4rem;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .top-feature-sub-container {
+    flex-wrap: wrap;
+  }
+  .third-banner-container {
+    background-color: #252525;
+    height: 970px;
+  }
+  .fourth-banner-container {
+    background-image: url(./FourthBackground.jpg);
+    height: 970px;
+    background-position: center;
+    background-image: cover;
+    position: relative;
+  }
+  .top-feature-sub-container {
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+    justify-content: space-around;
+  }
+}
+
+@media all and (min-width: 950px) {
+  .top-features-item-side {
+    width: 50%;
+    padding-right: 1rem;
+  }
+  .set-width {
+    max-width: 50%;
+    max-height: 50%;
+    min-height: 50%;
+    min-width: 50%;
+  }
+  .find-snowboard {
+    position: relative;
+    right: 120px;
+    bottom: 2rem;
+    padding-bottom: 4rem;
+  }
+  .find-snowboard2 {
+    position: relative;
+    right: 200px;
+    bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .third-img-assest {
+    background: transparent url("X.2.svg");
+    background-repeat: no-repeat;
+    background-position: right 8% top 52%;
+  }
+  .second-banner {
+    position: relative;
+    top: 12rem;
+  }
+  .top-feature-sub-container {
+    display: flex;
+    align-items: center;
+    padding-top: 8rem;
+    justify-content: space-around;
+  }
+  .top-feature-sub-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.fa-check {
+  color: #1b5ef8;
+}
+
+.underline {
+  border-bottom: 0.5px solid #e4e6eb;
+  width: 100%;
+  margin: auto;
+  padding-top: 0.9rem;
+  border-width: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+.company-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.bk-ground {
+  background-color: #f7f8fa !important;
+}
+
+@media all and (max-width: 540px) {
+  .header-text-section {
+    position: relative;
+    bottom: 2rem;
+  }
+  .svg-stlying-arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .find-snowboard2 {
+    position: relative;
+    right: 0px;
+    bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.top-features-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.featured-image {
+  border-radius: 4px;
+}
+
+.features-img-1 {
+  width: 58%;
+  height: auto;
+}
+
+@media all and (min-width: 950px) {
+  .top-features-item-side {
+    width: 50%;
+  }
+  .set-width {
+    max-width: 50%;
+    max-height: 50%;
+    min-height: 50%;
+    min-width: 50%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .first-container-text {
+    position: relative;
+    bottom: 7rem;
+  }
+}
